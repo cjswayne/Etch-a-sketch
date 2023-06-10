@@ -19,23 +19,26 @@
 const btnClickMe = document.querySelector('#btnClickMe')
 const mainContainer = document.querySelector('.container')
 btnClickMe.addEventListener('click', makeGrid)
-
+const testBox = document.createElement('p')
+testBox.textContent = "whore"
+testBox.style.display = "flex"
+mainContainer.appendChild(testBox)
+console.log(testBox)
 
 
 function makeGrid(){
-    x = 16
+    x = 2
     y = 2
 
-    const testBox = document.createElement('p')
-    testBox.textContent = "whore"
-    console.log(testBox)
+    
 
 
 
     for(i = x; i > 0; i--){
         console.log(i)
         const outerDiv = document.createElement('div');
-        outerDiv.className = `outerDiv${i}`;
+        outerDiv.className = `outerDiv`;
+        outerDiv.style.display = 'flex'
         if (i%2 ==0){
             outerDiv.setAttribute("style",
         'background: red;')
@@ -45,14 +48,24 @@ function makeGrid(){
         }
         
         outerDiv.style.border = "thick blue"
-        outerDiv.style.width = `${900/16}px`
-        outerDiv.style
+        //outerDiv.style.width = `${900/16}px`
+        //outerDiv.style.flex = "1"
         mainContainer.appendChild(outerDiv)
 
 
         console.log(outerDiv)
 
-        for(j = y; j > 0; i--){
+        for(j = y; j > 0; j--){
+            const innerDiv = document.createElement('div');
+            innerDiv.className = `innerDiv`;
+
+           
+            
+            
+            innerDiv.setAttribute("style", "background: orange;");
+            outerDiv.appendChild(innerDiv)
+            console.log(innerDiv)
+
             
 
         }
