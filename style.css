@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    background-color: black;
+    width: 900px;
+    height: 900px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    background-color: blue;
+    width: 10px;
+    border: 5px;
+}
