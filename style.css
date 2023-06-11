@@ -13,11 +13,18 @@ body{
 
 .box{
     display: flex;
-    background-color: blue;
+    /*background-color: blue;*/
     width: 10px;
     border: 5px;
+    border-w
+}
+/*
+.outerDiv, .innerDiv{
+    display: flex;
+    flex-direction: column;
 }
 
-.outerDiv{
-    display: flex;
-}
+.innerDiv{
+    width: 450px;
+    height: 450px;
+}*/
