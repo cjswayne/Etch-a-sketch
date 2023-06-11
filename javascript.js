@@ -79,14 +79,8 @@ function wipe(){
     for(i = length,i > 0; i--;){
         let node = document.getElementsByClassName("innerDiv")[i]
         node.parentNode.removeChild(node);
-        console.log(i)
-        
     }
-    console.log(node)
-    
-    
-    console.log(node)
-    
+    makeGrid(prompt("how big"))
 }
 
 function changeColor(){
